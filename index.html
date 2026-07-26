@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Booking Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Event Booking</h1>
+    <input type="text" id="search" placeholder="Search events by city..." onkeyup="filterEvents()">
+  </header>
+
+  <main id="events" class="events"></main>
+
+  <section class="booking">
+    <h2>Book Your Spot</h2>
+    <form onsubmit="submitBooking(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="number" id="tickets" placeholder="Number of Tickets" required>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
